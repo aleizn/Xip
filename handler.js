@@ -30,7 +30,7 @@ export async function handler(chatUpdate) {
     if (!m)
         return
     if (global.db.data == null) await global.loadDatabase()
-/* Creditos a Otosaka (https://wa.me/51993966345) */	
+/* Creditos a Aleizn (https://wa.me/51992621601) */	
 	
 if (global.chatgpt.data === null) await global.loadChatgptDB();	
 	
@@ -45,7 +45,7 @@ if (global.chatgpt.data === null) await global.loadChatgptDB();
         try {
             // TODO: use loop to insert data instead of this
             let user = global.db.data.users[m.sender]
-/* Creditos a Otosaka (https://wa.me/51993966345) */
+/* Creditos a Aleizn (https://wa.me/51992621601) */
 	    
 let chatgptUser = global.chatgpt.data.users[m.sender];
             if (typeof chatgptUser !== "object")
@@ -1435,8 +1435,8 @@ export async function callUpdate(callUpdate) {
     let callmsg = await this.reply(nk.from, `Hola *@${nk.from.split('@')[0]}*, las ${nk.isVideo ? 'videollamadas' : 'llamadas'} no están permitidas, serás bloqueado.\n-\nSi accidentalmente llamaste póngase en contacto con mi creador para que te desbloquee!`, false, { mentions: [nk.from] })
     //let data = global.owner.filter(([id, isCreator]) => id && isCreator)
     //await this.sendContact(nk.from, data.map(([id, name]) => [id, name]), false, { quoted: callmsg })
-    let vcard = `BEGIN:VCARD\nVERSION:3.0\nN:;⫷᭄©𝙷𝙰𝙳𝙴𝚂-𝙱𝙾𝚃-𝙾𝙼𝙴𝙶𝙰﹏✍;;;\nFN:⫷᭄©𝙷𝙰𝙳𝙴𝚂-𝙱𝙾𝚃-𝙾𝙼𝙴𝙶𝙰﹏✍\nORG:⫷᭄©𝙷𝙰𝙳𝙴𝚂-𝙱𝙾𝚃-𝙾𝙼𝙴𝙶𝙰﹏✍\nTITLE:\nitem1.TEL;waid=5212412377467:+521 241 237 7467\nitem1.X-ABLabel:⫷᭄©𝙷𝙰𝙳𝙴𝚂-𝙱𝙾𝚃-𝙾𝙼𝙴𝙶𝙰﹏✍\nX-WA-BIZ-DESCRIPTION:[❗] ᴄᴏɴᴛᴀᴄᴛᴀ ᴀ ᴇsᴛᴇ ɴᴜᴍ ᴘᴀʀᴀ ᴄᴏsᴀs ɪᴍᴘᴏʀᴛᴀɴᴛᴇs.\nX-WA-BIZ-NAME:⫷᭄©𝙷𝙰𝙳𝙴𝚂-𝙱𝙾𝚃-𝙾𝙼𝙴𝙶𝙰﹏✍\nEND:VCARD`
-    await this.sendMessage(nk.from, { contacts: { displayName: '⫷᭄©𝙷𝙰𝙳𝙴𝚂-𝙱𝙾𝚃-𝙾𝙼𝙴𝙶𝙰﹏✍', contacts: [{ vcard }] }}, {quoted: callmsg})
+    let vcard = `BEGIN:VCARD\nVERSION:3.0\nN:;⫷𝐁𝐎𝐓𝐂𝐈𝐓𝐎 𝐈𝐙𝐍✍;;;\nFN:⫷𝐁𝐎𝐓𝐂𝐈𝐓𝐎 𝐈𝐙𝐍✍\nORG:⫷𝐁𝐎𝐓𝐂𝐈𝐓𝐎 𝐈𝐙𝐍✍\nTITLE:\nitem1.TEL;waid=5212412377467:+521 241 237 7467\nitem1.X-ABLabel:⫷𝐁𝐎𝐓𝐂𝐈𝐓𝐎 𝐈𝐙𝐍✍\nX-WA-BIZ-DESCRIPTION:[❗] ᴄᴏɴᴛᴀᴄᴛᴀ ᴀ ᴇsᴛᴇ ɴᴜᴍ ᴘᴀʀᴀ ᴄᴏsᴀs ɪᴍᴘᴏʀᴛᴀɴᴛᴇs.\nX-WA-BIZ-NAME:⫷𝐁𝐎𝐓𝐂𝐈𝐓𝐎 𝐈𝐙𝐍✍\nEND:VCARD`
+    await this.sendMessage(nk.from, { contacts: { displayName: '⫷𝐁𝐎𝐓𝐂𝐈𝐓𝐎 𝐈𝐙𝐍✍', contacts: [{ vcard }] }}, {quoted: callmsg})
     await this.updateBlockStatus(nk.from, 'block')
     }
     }
