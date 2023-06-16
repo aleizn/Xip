@@ -8,7 +8,7 @@ let text = `╭─「➻❥ *owner* ➻❥」
 let buttonMessage= {
 'document': { url: `https://github.com/OFC-YOVANI/HADES-BOT-OMEGA` },
 'mimetype': `application/${document}`,
-'fileName': `⫷᭄ʜᴀᴅᴇs-ʙᴏᴛ-ᴍᴅ﹏✍`,
+'fileName': `⫷𝐀𝐥𝐞𝐢𝐳𝐧-𝐌𝐃✍`,
 'fileLength': 99999999999999,
 'pageCount': 200,
 'contextInfo': {

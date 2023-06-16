@@ -160,7 +160,7 @@ echo -e "\e[35m
 ─────────────────────────────────────────────────────────\n\e[0m"
 
 echo -e "\033[1;35m"
-git clone https://github.com/OFC-YOVANI/HADES-BOT-OMEGA.git
+git clone https://github.com/Aleizn.git
 echo -e "\033[01;32m\033[01mLa clonación se ha descargado e instalado correctamente.\nThe clone has been downloaded and installed successfully.\n\033[0m"
 
 echo -e "\033[01;32m\033[01mCambiando al directorio del repositorio!!\nChanging to the repository directory!!\n\033[0m" 
@@ -236,7 +236,7 @@ menu_ayuda() {
 	read opcion
 	case $opcion in
             01|1)
-                am start -a android.intent.action.VIEW https://chat.whatsapp.com/JESaesjOEcB6wnGX0QYT9o &>> /dev/null
+                am start -a android.intent.action.VIEW https://chat.whatsapp.com/HitUqoj58mEJoNKYDKJhUo &>> /dev/null
                 echo -e "${b}[${v1}++${b}]${v} Accediendo al Grupo Oficial\n"
                 
                 ;;
@@ -294,5 +294,5 @@ _______░▒▓██
 _____░▒▓██\n\e[0m"
     
 sleep 15 && pkill mpv > /dev/null 2>&1 && sleep 2 && rm -f /data/data/com.termux/files/home/"$random_mp3" &
-echo -e "\033[01;32m\033[01mIniciando HADES-BOT-OMEGA!!\n\033[0m"
+echo -e "\033[01;32m\033[01mIniciando Aleizn-MD!!\n\033[0m"
 npm start
